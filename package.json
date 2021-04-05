@@ -1,0 +1,22 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "![Dashboard Image]()\r > [README Generator]()\r ---\r ### Table of Contents\r - [Descritption](#description)\r - [How To Use](#how-to-use)\r - [Technologies](#technologies)\r - [Author Info](#author-info)\r - [Credits](#credits)\r - [License](#license)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamtrip7/README-generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamtrip7/README-generator/issues"
+  },
+  "homepage": "https://github.com/jamtrip7/README-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.0.0"
+  }
+}
