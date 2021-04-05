@@ -15,13 +15,13 @@ function promptUser() {
         },
         {
             type: 'input',
-            message: 'What enter a description of your project?',
+            message: 'Please enter a description of your project?',
             name: 'description'
         },
         {
             type: 'input',
             message: 'Describe how your application to be used?',
-            name: 'how to use'
+            name: 'usage'
         },
         {
             type: 'input',
@@ -31,7 +31,7 @@ function promptUser() {
         {
             type: 'input',
             message: 'Who are the contributors to this project?',
-            name: 'author info'
+            name: 'author'
         },
         {
             type: 'input',
@@ -39,9 +39,9 @@ function promptUser() {
             name: 'credits'
         },
         {
-            type: 'checkbox',
-            message: 'Please select a license?',
-            Choices: [
+            type: 'list',
+            message: 'Please select a license.',
+            choices: [
                 'Apache',
                 'MIT',
                 'ISC',
@@ -60,9 +60,9 @@ function generateMarkdown(response) {
 ### Table of Contents:
 
 - [Descritption](#description)
-- [How To Use](#how-to-use)
+- [Usage](#usage)
 - [Technologies](#technologies)
-- [Author Info](#author-info)
+- [Author](#author)
 - [Credits](#credits)
 - [License](#license)
 
@@ -73,7 +73,7 @@ function generateMarkdown(response) {
 
 ## How to Use:
     
-    ${response.how-to-use}
+    ${response.usage}
 
 ## Technologies:
     
@@ -81,7 +81,7 @@ function generateMarkdown(response) {
 
 ## Author Info:
     
-    ${response.author-info}
+    ${response.author}
     
 ## Credits:
     
@@ -99,7 +99,7 @@ function generateMarkdown(response) {
 async function init() {
     try {
         const response = await promptUser();
-
+            console.log(response);
         const readMe = generateMarkdown(response);
 
         await writeFileAsync('README.md', readMe);
