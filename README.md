@@ -13,15 +13,15 @@
 ## Description:
 ![License](https://img.shields.io/badges/License-Free-blue.svg "License Badge")
 
-    Generates a professional README quickly
+    Professional README Generator
 
 ## How to Use:
     
-    to quickly create a README
+    Instantly create a README markdown file
 
 ## Technologies:
     
-    HTML / CSS / JavaScript / Node
+    HTML /CSS / JavaScript / Node
 
 ## Author Info:
     
@@ -29,7 +29,7 @@
     
 ## Credits:
     
-    Google / Codecademy / A Smarter Way To Learn JavaScript
+    Google / YouTube / Codecademy / A Smarter Way To Learn JavaScript
 
 ## License:
     For more information about the license, click on the link below.
